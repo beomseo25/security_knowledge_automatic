@@ -8,6 +8,17 @@ NIST CSF 2.0 서브카테고리 22개(영문 한 문장)를 우리 보안 분류
 
 정답지(`data/nist_ground_truth_22.csv`)는 Claude와 범서가 협의해 만들고 Gemini로 교차검증했다.
 
+## 가설
+
+NIST 점수가 낮은 이유로 두 가지를 의심했고, 한 번에 하나씩만 바꿔서 확인했다.
+
+- **Phase D (기준선):** Category를 `도메인명 + 카테고리명`(이름만)으로 표현하고 dense 임베딩 하나로 유사도를 구한다.
+- **가설 B — 임베딩 방식이 약해서다.** Category 텍스트(이름만)는 그대로 두고, 유사도 계산만 dense → hybrid(dense + sparse + colbert)로 바꾼다.
+  시도 1 → 2의 변화가 B의 효과다.
+- **가설 A — Category 설명이 부족해서다.** 이름만 쓰던 Category를 상세 설명·키워드·제외 조건이 있는 profile로 바꾼다.
+  LLM은 쓰지 않고 dense(시도 3)와 hybrid(시도 4)로만 잰다. 시도 1 → 3이 A의 효과다.
+- **통합 — A + B + LLM.** profile + hybrid 임베딩으로 정렬하고, 마진이 작은 항목만 LLM이 다시 판정한다(시도 5).
+
 ## 시도와 결과 (n=22)
 
 | # | 시도 | Category 설명(profile) | 방식 | Top-1 | Top-3 |
