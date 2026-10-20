@@ -1,0 +1,16 @@
+# Local credentials
+.env
+algorithm/.env
+
+# Local Python environment and caches
+.venv/
+__pycache__/
+*.py[cod]
+.DS_Store
+
+# 재생성 가능한 임베딩 캐시 (폴더당 40~100MB)
+deploy_cache/
+# 가짜 LLM(--dry-run) 결과: 코드 경로 검증용이라 수치가 의미 없다
+*_dryrun/
+# LLM 응답 캐시
+algorithm/results/llm/

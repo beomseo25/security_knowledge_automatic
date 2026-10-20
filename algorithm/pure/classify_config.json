@@ -1,0 +1,17 @@
+{
+  "config": "profile_full__grid__d0.1_s0.2_c0.7",
+  "profiles_csv": "data/category_profiles_deploy.csv",
+  "model": "BAAI/bge-m3",
+  "margin_llm": 0.202556,
+  "margin_human": 0.07098,
+  "llm_candidates": 15,
+  "provenance": {
+    "config_selected_on": "라벨 248개 전체 Top-1 (배포본에는 홀드아웃이 없다)",
+    "config_top1_on_selection_data": "216/248 = 87.1%",
+    "config_caveat": "위 숫자는 고른 데이터로 잰 값이라 일반화 성능이 아니다. 기대 성능 추정치는 2단계 LOFO 수치를 봐야 한다.",
+    "margin_llm_rule": "이 config로 잰 248개 마진의 하위 30% 백분위수",
+    "margin_human_rule": "같은 분포의 하위 10% 백분위수",
+    "cut_source": "2단계 2-b/2-d: K=15, 마진 하위 30% 개입이 호출 1회당 이득이 가장 크고, 하위 10% 구간은 LLM 정확도도 75%로 낮아 사람 검토로 돌린다",
+    "profiles_audit": "audit_profiles.py 세 홀드아웃 전부 위반 0건"
+  }
+}

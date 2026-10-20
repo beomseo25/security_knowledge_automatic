@@ -1,0 +1,23 @@
+no,nist_id,nist_category,text_en,answer_category_id,answer_category_name,text_ko_by_claude
+1,GV.OC-01,Organizational Context,The organizational mission is understood and informs cybersecurity risk management,GOV-02,조직·역할·경영진,조직의 미션을 이해하고 이를 사이버보안 위험관리에 반영한다
+2,GV.RM-01,Risk Management Strategy,Risk management objectives are established and agreed to by organizational stakeholders,RSK-01,위험 식별·평가,위험관리 목표를 수립하고 조직 이해관계자의 합의를 얻는다
+3,GV.RR-01,"Roles, Responsibilities, and Authorities","Organizational leadership is responsible and accountable for cybersecurity risk and fosters a culture that is risk-aware, ethical, and continually improving",GOV-02,조직·역할·경영진,"조직의 경영진은 사이버보안 위험에 대한 책임을 지며, 위험을 인식하고 윤리적이며 지속적으로 개선하는 문화를 조성한다"
+4,GV.PO-01,Policy,"Policy for managing cybersecurity risks is established based on organizational context, cybersecurity strategy, and priorities and is communicated and enforced",GOV-01,정책·지침,"사이버보안 위험관리 정책을 조직 상황, 사이버보안 전략, 우선순위에 근거하여 수립하고 전달·시행한다"
+5,GV.OV-01,Oversight,Cybersecurity risk management strategy outcomes are reviewed to inform and adjust strategy and direction,GOV-03,감사·검토·개선,사이버보안 위험관리 전략의 결과를 검토하여 전략과 방향을 조정한다
+6,GV.SC-01,Cybersecurity Supply Chain Risk Management,"A cybersecurity supply chain risk management program, strategy, objectives, policies, and processes are established and agreed to by organizational stakeholders",SUP-02,공급망·위탁,"사이버보안 공급망 위험관리 프로그램, 전략, 목표, 정책, 절차를 수립하고 조직 이해관계자의 합의를 얻는다"
+7,ID.AM-01,Asset Management,Inventories of hardware managed by the organization are maintained,AST-01,자산 식별·목록,조직이 관리하는 하드웨어의 목록을 유지한다
+8,ID.RA-01,Risk Assessment,"Vulnerabilities in assets are identified, validated, and recorded",OPS-01,형상·패치·취약점,"자산의 취약점을 식별, 검증, 기록한다"
+9,ID.IM-01,Improvement,Improvements are identified from evaluations,GOV-03,감사·검토·개선,평가 결과로부터 개선사항을 도출한다
+10,PR.AA-01,"Identity Management, Authentication, and Access Control","Identities and credentials for authorized users, services, and hardware are managed by the organization",IAM-01,계정·식별관리,"인가된 사용자, 서비스, 하드웨어의 식별자와 자격증명을 조직이 관리한다"
+11,PR.AT-01,Awareness and Training,Personnel are provided with awareness and training so that they possess the knowledge and skills to perform general tasks with cybersecurity risks in mind,HUM-02,교육·인식,임직원이 사이버보안 위험을 고려하여 일반 업무를 수행할 수 있는 지식과 기술을 갖추도록 인식제고 및 교육을 제공한다
+12,PR.DS-01,Data Security,"The confidentiality, integrity, and availability of data-at-rest are protected",CRY-01,암호정책·저장암호화,"저장 데이터의 기밀성, 무결성, 가용성을 보호한다"
+13,PR.PS-01,Platform Security,Configuration management practices are established and applied,OPS-01,형상·패치·취약점,형상관리 절차를 수립하고 적용한다
+14,PR.IR-01,Technology Infrastructure Resilience,Networks and environments are protected from unauthorized logical access and usage,NET-01,네트워크 접근통제,네트워크와 환경을 비인가 논리적 접근 및 사용으로부터 보호한다
+15,DE.CM-01,Continuous Monitoring,Networks and network services are monitored to find potentially adverse events,LOG-02,모니터링·이상징후·관제,잠재적 이상 이벤트를 찾기 위해 네트워크와 네트워크 서비스를 모니터링한다
+16,DE.AE-02,Adverse Event Analysis,Potentially adverse events are analyzed to better understand associated activities,INC-02,이벤트 평가·보고,잠재적 이상 이벤트를 분석하여 관련 활동을 더 잘 이해한다
+17,RS.MA-01,Incident Management,The incident response plan is executed in coordination with relevant third parties once an incident is declared,INC-03,사고대응·증거수집,사고가 선언되면 관련 제3자와 협력하여 사고대응 계획을 실행한다
+18,RS.AN-03,Incident Analysis,Analysis is performed to establish what has taken place during an incident and the root cause of the incident,INC-03,사고대응·증거수집,사고 중 발생한 일과 사고의 근본 원인을 규명하기 위해 분석을 수행한다
+19,RS.CO-02,Incident Response Reporting and Communication,Internal and external stakeholders are notified of incidents,INC-02,이벤트 평가·보고,내부 및 외부 이해관계자에게 사고를 통지한다
+20,RS.MI-01,Incident Mitigation,Incidents are contained,INC-03,사고대응·증거수집,사고를 봉쇄한다
+21,RC.RP-01,Incident Recovery Plan Execution,The recovery portion of the incident response plan is executed once initiated from the incident response process,BCP-01,백업·복구,사고대응 절차에서 개시되면 사고대응 계획의 복구 부분을 실행한다
+22,RC.CO-03,Incident Recovery Communication,Recovery activities and progress in restoring operational capabilities are communicated to designated internal and external stakeholders,INC-02,이벤트 평가·보고,복구 활동과 운영 역량 복원 진행 상황을 지정된 내부 및 외부 이해관계자에게 전달한다
